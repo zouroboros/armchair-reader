@@ -1,0 +1,44 @@
+<interface>
+  <object class="GtkHeaderBar" id="headerbar">
+    <property name="show_close_button">True</property>
+    <property name="visible">True</property>
+     <child>
+      <object class="GtkMenuButton" id="open_button">
+        <property name="visible">True</property>
+        <property name="tooltip_text" translatable="yes">Open a file</property>
+        <property name="valign">center</property>
+        <property name="use_popover">True</property>
+        <style>
+          <class name="text-button"/>
+          <class name="image-button"/>
+        </style>
+        <child>
+          <object class="GtkBox" id="open_button_box">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="has_focus">False</property>
+            <property name="is_focus">True</property>
+            <child>
+              <object class="GtkLabel" id="open_button_name">
+                <property name="label" translatable="yes">_Open</property>
+                <property name="use-underline">True</property>
+                <property name="visible">True</property>
+                <property name="valign">baseline</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkImage" id="open_button_arrow">
+                <property name="visible">True</property>
+                <property name="valign">baseline</property>
+                <property name="icon_name">pan-down-symbolic</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="pack_type">start</property>
+      </packing>
+    </child>
+  </object>
+</interface>

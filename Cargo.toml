@@ -1,0 +1,19 @@
+[package]
+name = "armchair-reader"
+version = "0.1.0"
+authors = ["Zouroboros <zouroboros@zoho.eu>"]
+edition = "2018"
+
+[dependencies]
+
+[dependencies.poppler]
+path = "poppler-rs"
+version = "0.2.4"
+
+[dependencies.gtk]
+version = "0.6.0"
+features = ["v3_16"]
+
+[dependencies.gio]
+features = ["v2_50"]
+version = "0.6.0"
